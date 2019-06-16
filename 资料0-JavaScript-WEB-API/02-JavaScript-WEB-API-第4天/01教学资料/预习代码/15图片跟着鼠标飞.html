@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    img{
+      position: absolute;
+    }
+    body{
+      height: 2000px;
+    }
+  </style>
+</head>
+<body>
+<img src="images/bird.png" alt="" id="im" />
+<script src="common.js"></script>
+<script>
+  document.onmousemove=function (e) {
+    //clientX是相对于页面的可视区域的横坐标
+    //my$("im").style.left=e.clientX+"px";
+    //my$("im").style.top=e.clientY+"px";
+    my$("im").style.left=e.pageX+"px";
+    my$("im").style.top=e.pageY+"px";
+  };
+</script>
+</body>
+</html>
